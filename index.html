@@ -1,9 +1,15 @@
 <!doctype html>
-<html>
-  <head>
-    <title>This is the title of my webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input Form</title>
+</head>
+<body>
+    <h1>Enter some text</h1>
+    <form action="{{ url_for('process') }}" method="post">
+        <label for="user_input">Text:</label>
+        <input type="text" id="user_input" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
