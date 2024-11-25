@@ -3,12 +3,12 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Route to serve the HTML form
-@app.route('https://test-dx3d.onrender.com/')
+@app.route('/')
 def home():
     return render_template('index.html')
 
 # Route to handle form submission
-@app.route('https://test-dx3d.onrender.com/process', methods=['POST'])
+@app.route('/process', methods=['POST'])
 def process_input():
     # Get input from the form
     user_input = request.form.get('userInput')
