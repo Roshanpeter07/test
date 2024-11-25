@@ -8,7 +8,7 @@ def home():
     return render_template('index.html')
 
 # Route to handle form submission
-@app.route('/process', methods=['POST'])
+@app.route('https://test-dx3d.onrender.com/process', methods=['POST'])
 def process_input():
     # Get input from the form
     user_input = request.form.get('userInput')
