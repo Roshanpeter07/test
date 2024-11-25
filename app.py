@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Route to serve the HTML form
-@app.route('/')
+@app.route('https://test-dx3d.onrender.com/')
 def home():
     return render_template('index.html')
 
